@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en"">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ernest Beta portofolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8544ff2f3c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href ="#header">Home</a></li>
+                        <li><a href ="#about">About</a></li>
+                        <li><a href ="#porotfolio">Projects</a></li>
+                        <li><a href ="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p><span>Data Science</span>,<br>Committed to <span>Machine Learning & AI</span> </p>
+                    <h1>This is my personal<br> <span>project portofolio</span></h1>
+                </div>
+            </div>
+        </div>
+        <!--------------------------about-------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1 reveal">
+                        <img src="self.jpeg">
+                    </div>
+                    <div class="about-col-2 reveal">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am a Computer Science student specializing in Data Science, with a deep passion for Artificial Intelligence (AI) and Machine Learning (ML).
+                            My academic journey has fueled my curiosity to explore how data-driven 
+                            technologies can innovate and solve complex problems. Proficient in Python, 
+                            Java, C++, C, and familiar with Anaconda and Linux OS, 
+                            I am actively researching new ways to leverage AI and ML for predictive modeling, 
+                            data analysis, and real-world applications. I am eager to apply these skills to 
+                            develop scalable and efficient solutions that can drive decision-making and 
+                            optimize performance.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('certifications')"> Certifications</p>
+                            <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Analytical and Mathematical</span><br>Statistical Analysis & Machine Learning</li>
+                                <li><span>Programming</span><br>Python, R, SQL, Java, C++, C</li>
+                                <li><span>Technical Skills</span><br>Usage of libraries (Pandas, Scikit-learn)</li>
+                                <li><span>Data Manipulation and Communication</span><br>Data Wrangling & Visualization</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>Εθνικός Οργανισμός Πιστοποίησης Προσόντων και Επαγγελματικού Προσανατολισμού (Ε.Ο.Π.Π.Ε.Π.)</span><br>
+                                    Systems-Applications and Networks Support</li>
+                                <li><span>2022</span><br>Certificate of Proficiency in English</li>
+            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-current</span><br>Computer Science  at Athens University of Economics and Business (πρώην Α.Σ.Ο.Ε.Ε)</li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!------------Projects------------------------------------------------------>
+    <!--<div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>C++ Game Development</h2>
+                    <p>Developed a dynamic 2D game using C++, leveraging a custom library. 
+                        The game showcases seamless graphics, interactive gameplay mechanics, and optimized performance, 
+                        reflecting my strong grasp of C++ programming and game development principles.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Multithreaded Pizzeria Simulation</h2>
+                    <p> In this project, I simulated a fully operational pizzeria in C on 
+                        a Linux virtual machine, utilizing pthreads for pseudo-simultaneous task 
+                        execution. This allowed for efficient order processing, kitchen management, and 
+                        delivery coordination, demonstrating advanced multithreading and 
+                        synchronization techniques.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Multithreaded Pizzeria Simulation</h2>
+                    <p> In this project, I simulated a fully operational pizzeria in C on 
+                        a Linux virtual machine, utilizing pthreads for pseudo-simultaneous task 
+                        execution. This allowed for efficient order processing, kitchen management, and 
+                        delivery coordination, demonstrating advanced multithreading and 
+                        synchronization techniques.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+-->
+  <!----------------------------PROJECTS----------------------------------------------->  
+  <div id="porotfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C++.png">
+                <div class="layer">
+                    <h3>C++ Game Development</h3>
+                    <p>Developed a dynamic 2D game using C++, leveraging a custom library. 
+                        The game showcases seamless graphics, interactive gameplay mechanics, and optimized performance, 
+                        reflecting my strong grasp of C++ programming and game development principles.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C.jpeg">
+                <div class="layer">
+                    <h3>Multithreaded Pizzeria Simulation</h3>
+                    <p>Developed a dynamic 2D game using C++, leveraging a custom library. 
+                        The game showcases seamless graphics, interactive gameplay mechanics, and optimized performance, 
+                        reflecting my strong grasp of C++ programming and game development principles.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C++.png">
+                <div class="layer">
+                    <h3>C++ Game Development</h3>
+                    <p>Developed a dynamic 2D game using C++, leveraging a custom library. 
+                        The game showcases seamless graphics, interactive gameplay mechanics, and optimized performance, 
+                        reflecting my strong grasp of C++ programming and game development principles.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!--------------------------------Contact---------------------------------------->  
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at"></i>ernestbeta9@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+6946145418</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ernest-beta"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009299705123"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Academic_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2024 Ernest – Showcasing Data Science and Innovation in Projects. All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const reveals = document.querySelectorAll('.reveal');
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active'); // Add animation when element comes into view
+                        } else {
+                            entry.target.classList.remove('active'); // Remove animation when element leaves view
+                        }
+                    });
+                });
+
+                reveals.forEach(reveal => {
+                    observer.observe(reveal);
+                });
+            });
+
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+        
+                document.getElementById(tabname).classList.add("active-tab");
+                // Set active link styling
+                event.currentTarget.classList.add("active-link");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+                
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxgjnicdIa5RT2-sgqLks7ihydbcX_gkPin9SYhvyKZvGaLrE4bkvwA05Y_fUI2kwqVVQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
