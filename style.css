@@ -367,6 +367,9 @@ copyright i{
     #header{
         background-image: url(Photos/phone.jpg);
     }
+    .work-list {
+        grid-template-columns: 1fr; /* Adjust to one column */
+    }
     .header-text{
         margin-top: 100%;
         font-size: 15px;
