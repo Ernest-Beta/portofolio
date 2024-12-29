@@ -125,6 +125,8 @@
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
+            
+            
             <div class="work">
                 <img src="Photos/Genetic.png">
                 <div class="layer">
@@ -136,6 +138,29 @@
                     <a href="https://github.com/Ernest-Beta/Genetic-Algorithm-wJava"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+            <div class="work">
+                <img src="Photos/Backward.png">
+                <div class="layer">
+                    <h3>Backward Chaining Deduction System</h3>
+                    <p>A backward chaining mechanism in Java, designed for complex logical reasoning and inference in AI.
+                        Recursively analyzing & deducing from 
+                        a Knwledge Base,  demonstrates capabilities in automated reasoning, crucial for expert systems in AI.
+                    </p>
+                    <a href="https://github.com/Ernest-Beta/BackwardChaining"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Photos/Forward.png">
+                <div class="layer">
+                    <h3>Forward Chaining System</h3>
+                    <p>A forward chaining approach to logic-based inference, integral to AI's rule-based systems. 
+                        Processes rules and facts within a knowledge base to deduce conclusions,
+                        performing logical operations and support decision-making processes in dynamic AI applications.
+                    </p>
+                    <a href="https://github.com/Ernest-Beta/ForwardChaining"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
             <div class="work">
                 <img src="Photos/C++.png">
                 <div class="layer">
@@ -223,6 +248,38 @@
         </div>
     </div>
     <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const maxProjectsToShowAtOnce = 6; // You can change this to show more or fewer projects initially.
+            let currentlyDisplayed = maxProjectsToShowAtOnce;
+
+            const works = document.querySelectorAll('.work'); // Select all project items
+            const seeMoreBtn = document.querySelector('#porotfolio .btn'); // Select the "See More" button
+
+            // Initially hide all projects beyond the first 'maxProjectsToShowAtOnce'
+            works.forEach((work, index) => {
+                if (index >= maxProjectsToShowAtOnce) work.style.display = 'none';
+            });
+
+            seeMoreBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default button action
+                const totalProjects = works.length;
+                const nextLimit = currentlyDisplayed + maxProjectsToShowAtOnce;
+
+                // Loop through projects and display up to 'nextLimit'
+                works.forEach((work, index) => {
+                    if (index < nextLimit && work.style.display === 'none') {
+                        work.style.display = 'block'; // Change this to flex, grid, etc., depending on your layout
+                    }
+                });
+
+                currentlyDisplayed = nextLimit; // Update the current limit
+
+                // If all projects are displayed, hide the button or change its behavior
+                if (currentlyDisplayed >= totalProjects) {
+                    seeMoreBtn.style.display = 'none'; // Or you could disable it or change the text
+                }
+            });
+        });
             document.addEventListener("DOMContentLoaded", () => {
                 const reveals = document.querySelectorAll('.reveal');
 
